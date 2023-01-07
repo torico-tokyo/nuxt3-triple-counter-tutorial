@@ -126,7 +126,7 @@ const doubledLocalCounter = computed<number>(() => localCounter.value * 2)
 ```
 
 - 今回の script 内の変数の型は推論できる内容ですが、今回はあえて指定しています。
-- script 内で値を参照する再は ``.value` が必要で、 template タグ内では ``.value` は必要ありません。
+- script 内で値を参照する再は `.value` が必要で、 template タグ内では `.value` は必要ありません。
 
 ### pages/index.vue の修正
 作った `CounterComponent` を使用します。
