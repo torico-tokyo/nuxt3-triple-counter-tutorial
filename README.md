@@ -247,7 +247,7 @@ const emits = defineEmits(['emitIncrement'])
 <script lang="ts" setup>
 // 親の状態を使う
 const props = defineProps<{
-  counterId: string,
+  counterId: number,
   propCount: number,
   propDoubledCount: number,
 }>()
