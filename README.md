@@ -213,7 +213,7 @@ button.me-1 {
 ### components/counter/CounterComponent.vue の修正
 
 #### script 内に追加
-```vue
+```typescript
 const props = defineProps<{
   counterId: string,
   propCount: number,
