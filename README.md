@@ -39,7 +39,7 @@ http://localhost:3000/
 
 その中に、 `index.vue` を作成
 
-### 内容
+### pages/index.vue の内容
 ```vue
 <template>
   <div>
@@ -215,9 +215,9 @@ button.me-1 {
 #### script 内に追加
 ```vue
 const props = defineProps<{
-counterId: string,
-propCount: number,
-propDoubledCount: number,
+  counterId: string,
+  propCount: number,
+  propDoubledCount: number,
 }>()
 const emits = defineEmits(['emitIncrement'])
 ```
@@ -227,8 +227,8 @@ const emits = defineEmits(['emitIncrement'])
 
 ### ボタンを追加
 ```vue
-    <button @click.prevent="emits('emitIncrement')">
-Parent: {{ props.propCount }} * 2 = {{ props.propDoubledCount }}
+<button @click.prevent="emits('emitIncrement')">
+  Parent: {{ props.propCount }} * 2 = {{ props.propDoubledCount }}
 </button>
 ```
 `props`, `emits` を使うようにする
